@@ -1,0 +1,17 @@
+<svg id="visual" viewBox="0 0 900 900" width="100" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <rect width="900" height="900" fill="#051a24"></rect>
+    <g>
+        <g transform="translate(604 607)">
+            <path d="M0 -147L127.3 -73.5L127.3 73.5L0 147L-127.3 73.5L-127.3 -73.5Z" fill="#4FF57B"></path>
+        </g>
+        <g transform="translate(814 359)">
+            <path d="M0 -115L99.6 -57.5L99.6 57.5L0 115L-99.6 57.5L-99.6 -57.5Z" fill="#4FF57B"></path>
+        </g>
+        <g transform="translate(228 341)">
+            <path d="M0 -84L72.7 -42L72.7 42L0 84L-72.7 42L-72.7 -42Z" fill="#4FF57B"></path>
+        </g>
+        <g transform="translate(522 229)">
+            <path d="M0 -100L86.6 -50L86.6 50L0 100L-86.6 50L-86.6 -50Z" fill="#4FF57B"></path>
+        </g>
+    </g>
+</svg>
