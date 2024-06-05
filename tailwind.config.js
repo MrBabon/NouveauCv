@@ -19,7 +19,10 @@ module.exports = {
         'sun': '#73C0FC'
       },
       gridTemplateColumns:{
-        "menu": "300px 1fr 150px"
+        "menu": "300px 1fr 200px"
+      },
+      backgroundColor: {
+        'rgba': 'rgba(5, 26, 36, 0.8)',
       },
       textShadow: {
         sm: '0 1px 2px var(0,0,0,0.2)',
@@ -28,11 +31,55 @@ module.exports = {
       },
       animation: {
         spin: 'spin 15s linear infinite',
+        'slide-in': 'slideIn 0.75s forwards',
+        'slide-out': 'slideOut 0.75s forwards',
+        'slide-prestation-in': 'slidePrestationIn 0.75s forwards',
+        'slide-prestation-out': 'slidePrestationOut 0.75s forwards',
       },
       keyframes: {
         spin: {
           from: { transform: 'rotate(0deg)' },
           to: { transform: 'rotate(360deg)' },
+        },
+        slideIn: {
+          from: {
+            transform: 'translateX(20%)',
+            opacity: 0,
+          },
+          to: {
+            transform: 'translateX(0)',
+            opacity: 1,
+          },
+        },
+        slideOut: {
+          from: {
+            transform: 'translateX(0)',
+            opacity: 1,
+          },
+          to: {
+            transform: 'translateX(-100%)',
+            opacity: 0,
+          },
+        },
+        slidePrestationIn: {
+          from: {
+            transform: 'translateY(50%)',
+            opacity: 0,
+          },
+          to: {
+            transform: 'translateY(0)',
+            opacity: 1,
+          },
+        },
+        slidePrestationOut: {
+          from: {
+            transform: 'translateX(0)',
+            opacity: 1,
+          },
+          to: {
+            transform: 'translateX(-100%)',
+            opacity: 0,
+          },
         },
       },
     },
