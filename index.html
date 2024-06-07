@@ -23,8 +23,9 @@
         <!-- JavaScript -->
         <script src="assets/js/script.js" type="module" defer></script>
         <script defer src="assets/js/carousel.js" defer></script>
+        <script defer src="assets/js/dark-mode.js" defer></script>
     </head>
-    <body class=" selection:bg-neonGreen/50 ">
+    <body class=" selection:bg-neonGreen/50">
         <header class="fixed w-full dark:bg-deepNavy/75 border-b border-gray-400 z-50">
             <nav class="border-b dark:border-gray-400 border-gray-800 top-0 z-20 p-4 w-full grid grid-cols-none shadow-sm bg-gray-50 dark:bg-deepNavy/75 backdrop-blur md:max-w-8xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:border-b-0">
                 
@@ -42,13 +43,13 @@
                 </div>
 
                 <ul class="hidden toggle-menu px-1 pt-6 flex-col md:flex md:flex-row md:space-x-10 md:pt-0 md:w-auto md:items-center md:justify-start">
-                    <!-- <li class="py-2 pl-3">
+                    <li class="py-2 pl-3">
                         <div class="group">
                             <div class="flex">
                                 <a href="projets/" class="font-medium text-lg dark:text-zinc-300 text-deepTeal relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-auto after:w-full group-hover:after:scale-x-100 group-hover:after:origin-bottom-left after:bg-neonGreen dark:hover:text-white hover:text-deepNavy">Projets</a>
                             </div>
                         </div>
-                    </li> -->
+                    </li>
                     <li class="md:py-2 relative">
                         <div class=" pl-3 group">
                             <button type="button" class="hidden font-medium text-lg dark:text-zinc-300 text-deepTeal relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-auto after:w-full group-hover:after:scale-x-75 group-hover:after:origin-bottom-left after:bg-neonGreen dark:hover:text-white hover:text-deepNavy transition duration-400 ease-in-out md:flex md:items-center" id="menu-button" aria-expanded="true" aria-haspopup="true">
@@ -61,7 +62,7 @@
                         <div class="hidden absolute md:right-0 md:top-10 z-10 mt-2 w-56 origin-top-right rounded-md dark:bg-deepNavy bg-gray-100/100 shadow-lg ring-1 ring-neonGreen ring-opacity-50 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1" role="none">
                             <a href="tel:+33698118890" class="dark:text-gray-300 text-deepTeal block px-4 py-2 text-sm hover:bg-neonGreen/25 dark:hover:text-white hover:text-deepNavy transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-1">+33 6 98 11 88 90</a>
-                            <a href="contact/" class="dark:text-gray-300 text-deepTeal block px-4 py-2 text-sm hover:bg-neonGreen/25 dark:hover:text-white hover:text-deepNavy transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-2">M'écrire</a>
+                            <a href="tel:+33698118890" class="dark:text-gray-300 text-deepTeal block px-4 py-2 text-sm hover:bg-neonGreen/25 dark:hover:text-white hover:text-deepNavy transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-2">M'écrire</a>
                             </div>
                         </div>
                     </li>
@@ -74,7 +75,7 @@
                         </button>
                         <div id="disclosure-1" class="hidden mt-2 space-y-2 transition duration-700 ease-in-out">
                             <a href="tel:+33698118890" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">+33 6 98 11 88 90</a>
-                            <a href="contact/" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">M'écrire</a>
+                            <a href="tel:+33698118890" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">M'écrire</a>
                         </div>
                     </li>
                     <li>
@@ -102,10 +103,10 @@
                         <img src="assets/images/christophe.png" class="w-52 object-cover rounded-full sm:w-72">
                     </div>
                 </div>
-                <div class="flex justify-center space-x-28 pt-44 pb-10">
+                <div class="flex justify-center space-x-20 pt-44 pb-10">
                     <div class="drop-shadow-md">
-                        <a href="https://www.linkedin.com/in/christophe-d-anna" target="_blank" class="flex items-center space-x-1 dark:bg-neonGreen/25 bg-deepTeal text-neonGreen py-2 px-4 rounded-full border border-neonGreen">
-                            <h6 class=" font-semibold text-xl ">
+                        <a href="https://www.linkedin.com/in/christophe-d-anna" target="_blank" class="flex items-center space-x-1 dark:bg-neonGreen/25 bg-deepTeal text-neonGreen sm:py-2 sm:px-4 py-1 px-3 rounded-full border border-neonGreen">
+                            <h6 class=" font-semibold sm:text-xl text-lg">
                                 Linkedin
                             </h6>
                             <span>
@@ -114,8 +115,8 @@
                         </a>
                     </div>
                     <div class="drop-shadow-md">
-                        <a href="https://github.com/MrBabon" target="_blank" class="flex items-center space-x-1 dark:bg-neonGreen/25 bg-deepTeal text-neonGreen py-2 px-4 rounded-full border border-neonGreen">
-                            <span class=" font-semibold text-xl">
+                        <a href="https://github.com/MrBabon" target="_blank" class="flex items-center space-x-1 dark:bg-neonGreen/25 bg-deepTeal text-neonGreen sm:py-2 sm:px-4 py-1 px-3 rounded-full border border-neonGreen">
+                            <span class=" font-semibold sm:text-xl text-lg">
                                 GitHub
                             </span>
                             <span>
@@ -310,8 +311,8 @@
                         </a>
                     </li>
                     <li class="pb-12 max-w-7xl mx-auto">
-                        <div class="dark:bg-white bg-deepNavy w-40 h-10 flex items-center flex-col-reverse mt-5 lg:mx-44 md:mx-28 mx-10 ">
-                            <a href="docs/CV.pdf" class="flex justify-center items-center text-deepNavy bg-neonGreen py-2 px-8 w-40 h-10 text-lg transition-all hover:translate-x-1 hover:-translate-y-1 md:mt-10 md:text-xl">Voir plus</a>
+                        <div class="dark:bg-neonGreen rounded bg-deepNavy w-40 h-10 flex items-center flex-col-reverse mt-5 lg:mx-44 md:mx-28 mx-10 ">
+                            <a href="docs/CV.pdf" target="_blank" class="flex justify-center items-center text-neonGreen bg-deepNavy ring-1 ring-neonGreen rounded py-2 px-8 w-40 h-10 text-lg transition-all hover:translate-x-1.5 hover:-translate-y-1.5 md:mt-10">Voir plus</a>
                         </div>
                     </li>
                 </ol>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="scroll-smooth dark">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +10,192 @@
         <meta name="keywords" content="développeur web, développeur full-stack, développeur Ruby on Rails, développeur React, développeur React Native, développeur JavaScript, développeur HTML, développeur CSS, développeur Docker, développeur web Nice, développeur web France, développeur web Genève, développeur web junior, développeur web passionné, développeur web autodidacte, frontend, backend, conception d'applications">
         <meta name="theme-color" content="#051a24">
         <!-- TailwindCSS -->
-        <link rel="stylesheet" href="assets/dist/output.css"/>
+        <link rel="stylesheet" href="../assets/dist/output.css"/>
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/Logo.png">
-        <link rel="icon" type="image/png" sizes="32x23" href="assets/images/Logo.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/Logo.png">
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/Logo.png">
+        <link rel="icon" type="image/png" sizes="32x23" href="../assets/images/Logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/Logo.png">
+        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
         <!-- Font-Family -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <!-- JavaScript -->
-        <script src="assets/js/script.js" type="module" defer></script>
+        <script src="../assets/js/script.js" type="module" defer></script>
+        <script defer src="../assets/js/dark-mode-projet.js" defer></script>
     </head>
-<body>
-    
+<body class=" selection:bg-neonGreen/50">
+    <header class="fixed w-full dark:bg-deepNavy/75 border-b border-gray-400 z-50">
+        <nav class="border-b dark:border-gray-400 border-gray-800 top-0 z-20 p-4 w-full grid grid-cols-none shadow-sm bg-gray-50 dark:bg-deepNavy/75 backdrop-blur md:max-w-8xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:border-b-0">
+            
+            <div class="flex justify-between items-center md:justify-center">
+                <div class="flex items-center">
+                    <a href="..">
+                        <img src="../assets/images/Dannacode.png" alt="Logo DannaCode" class="w-12">
+                    </a>
+                    <a href=".." class="flex justify-center text-lg py-2 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emeraldGreen to-neonGreen text-center w-56">Christophe D'ANNA</a>
+                </div>
+                <button class="logo-button icone-toggle bg-deepNavy rounded-md p-2  ring-1 ring-neonGreen ring-opacity-20 md:hidden">
+                    <span class="sr-only">Ouvrir le menu principal</span>
+                    <img src="../assets/images/icon/menu.svg" alt="Icône hamberger" class="h-6 w-6 ">
+                </button>
+            </div>
+
+            <ul class="hidden toggle-menu px-1 pt-6 flex-col md:flex md:flex-row md:space-x-10 md:pt-0 md:w-auto md:items-center md:justify-start">
+                <li class="py-2 pl-3">
+                    <div class="group">
+                        <div class="flex">
+                            <a href="" class="font-medium text-lg dark:text-zinc-300 text-deepTeal relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-auto after:w-full group-hover:after:scale-x-100 group-hover:after:origin-bottom-left after:bg-neonGreen dark:hover:text-white hover:text-deepNavy">Projets</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="md:py-2 relative">
+                    <div class=" pl-3 group">
+                        <button type="button" class="hidden font-medium text-lg dark:text-zinc-300 text-deepTeal relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-auto after:w-full group-hover:after:scale-x-75 group-hover:after:origin-bottom-left after:bg-neonGreen dark:hover:text-white hover:text-deepNavy transition duration-400 ease-in-out md:flex md:items-center" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            Contact
+                            <svg class="ml-2 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden absolute md:right-0 md:top-10 z-10 mt-2 w-56 origin-top-right rounded-md dark:bg-deepNavy bg-gray-100/100 shadow-lg ring-1 ring-neonGreen ring-opacity-50 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                        <a href="tel:+33698118890" class="dark:text-gray-300 text-deepTeal block px-4 py-2 text-sm hover:bg-neonGreen/25 dark:hover:text-white hover:text-deepNavy transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-1">+33 6 98 11 88 90</a>
+                        <a href="tel:+33698118890" class="dark:text-gray-300 text-deepTeal block px-4 py-2 text-sm hover:bg-neonGreen/25 dark:hover:text-white hover:text-deepNavy transition duration-300 ease-in-out" role="menuitem" tabindex="-1" id="menu-item-2">M'écrire</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="py-2 pl-3 group relative  md:hidden">
+                    <button type="button" class="flex items-center font-medium text-lg text-zinc-100 hover:text-white relative after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:absolute after:origin-bottom-left after:transform after:ease-in-out after:duration-200 w-auto after:w-full group-hover:after:scale-x-75 group-hover:after:origin-bottom-left after:bg-neonto-neonGreen  transition duration-400 ease-in-out md:flex md:items-center md:text-base lg:text-lg" id="menu-button-phone" aria-controls="disclosure-1" aria-expanded="false">
+                        Contact
+                        <svg class="ml-2 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="disclosure-1" class="hidden mt-2 space-y-2 transition duration-700 ease-in-out">
+                        <a href="tel:+33698118890" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">+33 6 98 11 88 90</a>
+                        <a href="tel:+33698118890" class="block font-medium text-gray-300 py-1 leading-7 pl-3 hover:text-white transition duration-300 ease-in-out">M'écrire</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="" id="toggle-dark-mode">
+                        <span class="dark:bg-moon bg-sun w-8 h-8 rounded-full flex justify-center items-center">
+                            <img id="mode-icon" src="../assets/images/icon/moon.svg" alt="Mode light/dark" class="mode-icon w-6">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="menu-items hidden justify-center items-center mt-6 rounded-xl   md:mt-0 md:justify-end md:flex">
+                <a href="tel:+33698118890" class="hidden justify-center lg:text-xl md:text-base py-[10px]  font-medium rounded-xl  bg-neonGreen hover:bg-emeraldGreen text-deepNavy  text-center px-3 md:flex">Recrutez-moi</a>
+            </div>
+        </nav>
+    </header>
+    <main class="dark:bg-deepNavy bg-gray-50">
+        <section id="projets">
+            <div class="h-40 sm:h-52"></div>
+            <div class="container mx-auto p-4">
+                <ul>
+                    <li class="pb-4 max-w-7xl mx-auto">
+                        <div class="block lg:flex items-center space-x-4 group rounded-md p-5 no-underline relative ">
+                            <a href="https://topspot.fr" class="lg:w-1/2 w-full transition-all ease-in-out duration-300 relative overflow-hidden">
+                                <img src="../assets/images/topspot.png" alt="Website TopSpoT" class="rounded object-cover w-full h-full transition-all ease-in-out duration-300 filter">
+                                <div class="absolute inset-0 bg-tealBlue rounded opacity-70 hover:opacity-0 transition-opacity duration-300"></div>
+                            </a>
+                            <div class="lg:w-1/2 w-full mt-5 lg:mt-0 z-10 relative">
+                                <h6 class="font-light text-neonGreen text-end">Featured Project</h6>
+                                <h1 class="font-extrabold text-slate-100 text-2xl hover:text-neonGreen mb-2 text-end">TopSpoT</h1>
+                                <p class="text-slate-300 dark:group-hover:text-white text-sm mt-4 bg-deepTeal p-5 rounded shadow-lg text-end">
+                                    Conception et développement individuel de la page d'atterrissage de TopSpot en utilisant HTML, CSS, JavaScript et PHP. Responsable de toutes les étapes du processus, y compris la conception du design et l'implémentation des fonctionnalités.
+                                </p>
+                                <ul class="flex space-x-6 mt-4 justify-end">
+                                    <li class="py-2 text-gray-300 font-extralight">HTML</li>
+                                    <li class="py-2 text-gray-300 font-extralight">CSS</li>
+                                    <li class="py-2 text-gray-300 font-extralight">JavaScript</li>
+                                    <li class="py-2 text-gray-300 font-extralight">PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-4 max-w-7xl mx-auto">
+                        <div class="block lg:flex items-center space-x-4 group rounded-md p-5 no-underline relative ">
+                            <a href="https://topspot.fr" class="lg:w-1/2 w-full transition-all ease-in-out duration-300 relative overflow-hidden">
+                                <img src="../assets/images/topspot.png" alt="Website TopSpoT" class="rounded object-cover w-full h-full transition-all ease-in-out duration-300 filter">
+                                <div class="absolute inset-0 bg-tealBlue rounded opacity-70 hover:opacity-0 transition-opacity duration-300"></div>
+                            </a>
+                            <div class="lg:w-1/2 w-full mt-5 lg:mt-0 z-10 relative">
+                                <h6 class="font-light text-neonGreen text-end">Featured Project</h6>
+                                <h1 class="font-extrabold text-slate-100 text-2xl hover:text-neonGreen mb-2 text-end">TopSpoT</h1>
+                                <p class="text-slate-300 dark:group-hover:text-white text-sm mt-4 bg-deepTeal p-5 rounded shadow-lg text-end">
+                                    Conception et développement individuel de la page d'atterrissage de TopSpot en utilisant HTML, CSS, JavaScript et PHP. Responsable de toutes les étapes du processus, y compris la conception du design et l'implémentation des fonctionnalités.
+                                </p>
+                                <ul class="flex space-x-6 mt-4 justify-end">
+                                    <li class="py-2 text-gray-300 font-extralight">HTML</li>
+                                    <li class="py-2 text-gray-300 font-extralight">CSS</li>
+                                    <li class="py-2 text-gray-300 font-extralight">JavaScript</li>
+                                    <li class="py-2 text-gray-300 font-extralight">PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-4 max-w-7xl mx-auto">
+                        <div class="block lg:flex items-center space-x-4 group rounded-md p-5 no-underline relative ">
+                            <a href="https://topspot.fr" class="lg:w-1/2 w-full transition-all ease-in-out duration-300 relative overflow-hidden">
+                                <img src="../assets/images/topspot.png" alt="Website TopSpoT" class="rounded object-cover w-full h-full transition-all ease-in-out duration-300 filter">
+                                <div class="absolute inset-0 bg-tealBlue rounded opacity-70 hover:opacity-0 transition-opacity duration-300"></div>
+                            </a>
+                            <div class="lg:w-1/2 w-full mt-5 lg:mt-0 z-10 relative">
+                                <h6 class="font-light text-neonGreen text-end">Featured Project</h6>
+                                <h1 class="font-extrabold text-slate-100 text-2xl hover:text-neonGreen mb-2 text-end">TopSpoT</h1>
+                                <p class="text-slate-300 dark:group-hover:text-white text-sm mt-4 bg-deepTeal p-5 rounded shadow-lg text-end">
+                                    Conception et développement individuel de la page d'atterrissage de TopSpot en utilisant HTML, CSS, JavaScript et PHP. Responsable de toutes les étapes du processus, y compris la conception du design et l'implémentation des fonctionnalités.
+                                </p>
+                                <ul class="flex space-x-6 mt-4 justify-end">
+                                    <li class="py-2 text-gray-300 font-extralight">HTML</li>
+                                    <li class="py-2 text-gray-300 font-extralight">CSS</li>
+                                    <li class="py-2 text-gray-300 font-extralight">JavaScript</li>
+                                    <li class="py-2 text-gray-300 font-extralight">PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-4 max-w-7xl mx-auto">
+                        <div class="block lg:flex items-center space-x-4 group rounded-md p-5 no-underline relative ">
+                            <a href="https://topspot.fr" class="lg:w-1/2 w-full transition-all ease-in-out duration-300 relative overflow-hidden">
+                                <img src="../assets/images/topspot.png" alt="Website TopSpoT" class="rounded object-cover w-full h-full transition-all ease-in-out duration-300 filter">
+                                <div class="absolute inset-0 bg-tealBlue rounded opacity-70 hover:opacity-0 transition-opacity duration-300"></div>
+                            </a>
+                            <div class="lg:w-1/2 w-full mt-5 lg:mt-0 z-10 relative">
+                                <h6 class="font-light text-neonGreen text-end">Featured Project</h6>
+                                <h1 class="font-extrabold text-slate-100 text-2xl hover:text-neonGreen mb-2 text-end">TopSpoT</h1>
+                                <p class="text-slate-300 dark:group-hover:text-white text-sm mt-4 bg-deepTeal p-5 rounded shadow-lg text-end">
+                                    Conception et développement individuel de la page d'atterrissage de TopSpot en utilisant HTML, CSS, JavaScript et PHP. Responsable de toutes les étapes du processus, y compris la conception du design et l'implémentation des fonctionnalités.
+                                </p>
+                                <ul class="flex space-x-6 mt-4 justify-end">
+                                    <li class="py-2 text-gray-300 font-extralight">HTML</li>
+                                    <li class="py-2 text-gray-300 font-extralight">CSS</li>
+                                    <li class="py-2 text-gray-300 font-extralight">JavaScript</li>
+                                    <li class="py-2 text-gray-300 font-extralight">PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <a href="" id="scrollButton" class="text-3xl">
+        <span id="scrollIcon" class="transition-top h-11 w-11 bg-gradient-to-tr from-deepTeal to-tealBlue rounded-full hidden sm:flex justify-center items-center fixed right-12 bottom-8 border-2 border-flashDanna z-50 opacity-0 transition-all duration-300 ease-in-out transition-scale hover:scale-105 hover:border-deepTeal">
+            <img src="../assets/images/icon/arrow-down-short.svg" alt="chevron-up" class="w-8 rotate-180">
+        </span>
+    </a>
+    <!-- Light effect -->
+    <div class="light-effect pointer-events-none fixed inset-0 z-30 transition duration-300"></div>
+    <!-- Loader -->
+    <div class="fixed w-full h-full bg-rgba flex justify-center items-center flex-row gap-2 z-50 top-0 left-0" id="loader">
+        <div class="w-5 h-5 rounded-full bg-tealBlue animate-bounce"></div>
+        <div class="w-5 h-5 rounded-full bg-deepTeal animate-bounce [animation-delay:-.3s]"></div>
+        <div class="w-5 h-5 rounded-full bg-neonGreen animate-bounce [animation-delay:-.5s]"></div>
+    </div>
 </body>
 </html>
